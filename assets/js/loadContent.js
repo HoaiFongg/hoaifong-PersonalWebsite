@@ -13,7 +13,7 @@ function loadHTML(elementId, file) {
 
 // Tải header và footer
 Promise.all([
-    loadHTML('header', 'partials/header.html'),
+    loadHTML('nav', 'partials/navigation.html'),
     loadHTML('footer', 'partials/footer.html')
 ]).then(() => {
     document.body.classList.remove('hidden'); // Hiện nội dung sau khi tải xong

@@ -3,42 +3,116 @@
     /* Ẩn nội dung */
 }
 
+/* Tùy chỉnh cho headerbar */
+.headerbar {
+    padding: 15px 20px;
+}
 
-/* Navigation styling */
-.navbar-nav .nav-link {
-    padding: 10px 20px;
+.headerbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-link {
+    font-size: 1.1rem;
+    padding-right: 20px;
+    color: white;
+}
+
+.header-link:hover {
+    color: #f8f9fa;
+    /* Làm màu sáng hơn khi hover */
+}
+
+.headerbar-toggler {
+    border-color: white;
+}
+
+.headerbar-dark .headerbar-toggler-icon {
+    background-image: url("data:image/svg+xml,...");
+    /* Thay đổi icon toggle nếu muốn */
+}
+
+.headerbar-header .header-item {
+    margin-left: 15px;
+}
+
+.headerbar-header .header-link.active {
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+/* Đảm bảo thanh điều hướng cố định ở đầu trang */
+.headerbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header-item a {
+    display: flex;
+    align-items: center;
+    /* Căn giữa icon và văn bản */
+}
+
+.header-item a i {
+    margin-right: 5px;
+    /* Khoảng cách giữa icon và văn bản */
+}
+
+
+/* Tùy chỉnh cho headerbar */
+.headerbar {
+    padding: 15px 20px;
+}
+
+.headerbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Các liên kết trong thanh điều hướng */
+.header-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    /* Thêm padding để tăng khoảng cách */
+    color: white;
+    /* Màu chữ mặc định */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Hiệu ứng chuyển tiếp cho nền và màu chữ */
+}
+
+/* Hiệu ứng hover */
+.header-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Nền khi hover */
+    border-radius: 5px;
+    /* Bo tròn các cạnh */
     color: #fff;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+    /* Đảm bảo chữ vẫn trắng */
 }
 
-.navbar-nav .nav-link:hover {
-    background-color: #ffffff30;
-    /* Tạo hiệu ứng hover với nền trắng mờ */
+/* Hiệu ứng cho các liên kết trong thanh điều hướng */
+.header-link {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Hiệu ứng chuyển tiếp cho nền và màu chữ */
+}
+
+.header-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Nền khi hover */
+    color: #fff;
+    /* Đảm bảo chữ vẫn trắng */
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Nền sáng hơn cho trang hiện tại */
     border-radius: 5px;
-    color: #f8f9fa;
-    /* Màu chữ sáng hơn khi hover */
-}
-
-.navbar-nav .active {
-    background-color: #ffffff50;
-    border-radius: 5px;
-    color: #f8f9fa;
-}
-
-header {
-    background: linear-gradient(45deg, #007bff, #0056b3);
-    /* Hiệu ứng gradient cho thanh header */
-}
-
-h1,
-p.lead {
-    margin-bottom: 0;
-}
-
-/* Custom mobile responsiveness */
-.navbar-toggler {
-    border-color: #fff;
-    /* Màu trắng cho icon toggle trên mobile */
+    /* Bo tròn các cạnh */
+    color: #ffffff;
+    /* Màu chữ trắng */
+    font-weight: bold;
+    /* Làm đậm chữ */
 }
