@@ -1,16 +1,1 @@
-// Khởi tạo EmailJS
-(function () {
-    emailjs.init("yfBDjKwQxwQeXHzT8"); // Thay YOUR_USER_ID bằng User ID từ EmailJS
-})();
-
-// Xử lý form liên hệ
-document.getElementById("contactForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Ngăn chặn hành vi mặc định của form
-    emailjs.sendForm('service_contact', 'template_qhe0qaf', this)
-        .then(function () {
-            alert("Your message has been sent!");
-        }, function (error) {
-            alert("Failed to send message: " + JSON.stringify(error));
-        });
-});
-
+var _0x1d6809 = _0x4f48; function _0x4f48(_0xfb18cc, _0x4c1f88) { var _0x22e51d = _0x22e5(); return _0x4f48 = function (_0x4f48b6, _0x4f1eba) { _0x4f48b6 = _0x4f48b6 - 0x1c6; var _0x3bbb96 = _0x22e51d[_0x4f48b6]; return _0x3bbb96; }, _0x4f48(_0xfb18cc, _0x4c1f88); } function _0x22e5() { var _0x2b801d = ['template_qhe0qaf', 'preventDefault', 'submit', 'service_contact', '451185xMrmsO', 'Your\x20message\x20has\x20been\x20sent!', 'sendForm', '2jIODOq', 'stringify', 'Failed\x20to\x20send\x20message:\x20', '17915380fAMzNF', 'init', 'contactForm', '33952kpgeFd', '99phjGDU', '2282319tdmBJI', 'getElementById', '54WUVlgc', '2942860PvRrTK', '3467880MVMOga', 'then', '615196mYrZzo', 'yfBDjKwQxwQeXHzT8']; _0x22e5 = function () { return _0x2b801d; }; return _0x22e5(); } (function (_0x3733c7, _0x3dfdb7) { var _0x4c0933 = _0x4f48, _0x4e3985 = _0x3733c7(); while (!![]) { try { var _0xaab0c9 = parseInt(_0x4c0933(0x1d2)) / 0x1 * (parseInt(_0x4c0933(0x1c9)) / 0x2) + parseInt(_0x4c0933(0x1da)) / 0x3 + parseInt(_0x4c0933(0x1c6)) / 0x4 + parseInt(_0x4c0933(0x1c7)) / 0x5 + -parseInt(_0x4c0933(0x1dc)) / 0x6 * (parseInt(_0x4c0933(0x1cf)) / 0x7) + parseInt(_0x4c0933(0x1d8)) / 0x8 * (-parseInt(_0x4c0933(0x1d9)) / 0x9) + -parseInt(_0x4c0933(0x1d5)) / 0xa; if (_0xaab0c9 === _0x3dfdb7) break; else _0x4e3985['push'](_0x4e3985['shift']()); } catch (_0x3be4cb) { _0x4e3985['push'](_0x4e3985['shift']()); } } }(_0x22e5, 0x5e77f), (function () { var _0x4666c7 = _0x4f48; emailjs[_0x4666c7(0x1d6)](_0x4666c7(0x1ca)); }()), document[_0x1d6809(0x1db)](_0x1d6809(0x1d7))['addEventListener'](_0x1d6809(0x1cd), function (_0x2007f4) { var _0x5c88e0 = _0x1d6809; _0x2007f4[_0x5c88e0(0x1cc)](), emailjs[_0x5c88e0(0x1d1)](_0x5c88e0(0x1ce), _0x5c88e0(0x1cb), this)[_0x5c88e0(0x1c8)](function () { var _0x364624 = _0x5c88e0; alert(_0x364624(0x1d0)); }, function (_0x4e8111) { var _0x39af93 = _0x5c88e0; alert(_0x39af93(0x1d4) + JSON[_0x39af93(0x1d3)](_0x4e8111)); }); }));
