@@ -10,21 +10,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body class="hidden">
-
+    <div id="header"></div> <!-- Nơi chèn header -->
 
     <!-- Nội dung trang -->
-    <div class="container">
-        <h2>Welcome to My Portfolio</h2>
-        <p>This is the home page content.</p>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1>Welcome to My Portfolio</h1>
+            <p class="lead">Hello, this is a website I do with many different AI tools, so the website is not
+                professional, if there are any mistakes or suggestions, you can give me feedback in the contact section
+                below. Thank you for stopping by the site and giving me feedback.
+            </p>
+        </div>
+
+        <!-- Giới thiệu ngắn gọn về bản thân -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>
+                    Hello, I'm Hoaifong. I am currently pursuing a Master's degree in Information Technology at Nguyen
+                    Tat Thanh University, specializing in Data Engineering with a focus on transforming raw data into
+                    valuable insights.</p>
+                <p>Feel free to check out my projects and contact me for any collaborations!</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="assets/img/avartar.jpg" class="img-fluid avatar-img" alt="Profile Picture">
+            </div>
+        </div>
+
+        <!-- Form liên hệ cơ bản -->
+        <div class="row mt-5">
+            <div class="col-md-8 mx-auto form-section">
+                <h2>Contact Me</h2>
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div id="footer"></div> <!-- Nơi chèn footer -->
 
     <script src="assets/js/loadContent.js"></script> <!-- Tham chiếu đến tệp JavaScript -->
     <script src="assets/js/navbarHighlight.js"></script> <!-- Đường dẫn tới tệp JavaScript -->
+    <script>
+        // Giả lập xử lý form liên hệ
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Your message has been sent!");
+        });
+    </script>
 </body>
 
 </html>
