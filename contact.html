@@ -13,23 +13,25 @@
 </head>
 
 <body class="hidden">
-
+    <div id="header"></div> <!-- Nơi chèn header -->
 
     <!-- Nội dung trang -->
-    <div class="container">
+    <div class="container mt-5">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+        <form id="contactForm">
             <div class="mb-3">
                 <label for="name" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Your Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
+                    required>
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Your Message</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="4"
+                    placeholder="Write your message here" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
@@ -37,9 +39,10 @@
 
     <div id="footer"></div> <!-- Nơi chèn footer -->
 
-    <script src="assets/js/loadContent.js"></script> <!-- Tham chiếu đến tệp JavaScript -->
-    <script src="assets/js/navbarHighlight.js"></script> <!-- Đường dẫn tới tệp JavaScript -->
-
+    <!-- Gọi file JavaScript xử lý form liên hệ -->
+    <script src="assets/js/loadContent.js"></script> <!-- Load nội dung -->
+    <script src="assets/js/navbarHighlight.js"></script> <!-- Đánh dấu nav hiện tại -->
+    <script src="assets/js/contactToMe.js"></script> <!-- Đường dẫn tới file JavaScript -->
 </body>
 
 </html>
